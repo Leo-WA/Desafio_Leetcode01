@@ -18,6 +18,6 @@ A solução envolve o uso de uma técnica de janela deslizante combinada com map
 
 A implementação da solução em Java faz uso de um loop principal que itera sobre cada possível posição inicial da janela dentro de `s`. Para cada posição inicial, utilizamos dois ponteiros, `left` e `right`, para delimitar a janela atual. A medida que movemos `right` para explorar a string `s`, usamos um mapa de hash `windowCounts` para contar as palavras dentro da janela atual e comparamos com o mapa `wordsCount` que contém a contagem original das palavras em `words`.
 
-## otimização
+## Otimização
 
 A principal otimização realizada no código acima foi reutilizar o mapa windowCounts ao invés de criar um novo a cada iteração. Isso reduz significativamente o número de objetos que precisam ser alocados durante a execução do programa, economizando memória.
